@@ -1,0 +1,10 @@
+#main-content{
+    background-color: var(--bg-color);
+    flex: 2 1 0;
+    border-radius: var(--container-border-radius);
+    padding: 3rem;    
+    display: flex;
+    flex-direction: column;
+}
+
+

@@ -1,0 +1,89 @@
+.tecnologies-container h2{
+    color: var(--text-color); 
+    font-size: 2.2rem; 
+    margin-bottom: 1.5rem; 
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 1rem;
+    margin-top: 1.5rem;
+ }
+ .tecnologies-container p{
+    color: var(--text-color);
+    margin-bottom: 3rem;     
+}
+.tecnologia-grid{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+ .tecnologia-card{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 1rem;
+    border: 1px solid #333;
+    width: 40%;
+    margin-bottom: .5rem; 
+   border-radius: var(--card-border-radius);
+}
+.tecnologia-card h3{
+    color: var(--text-color);
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+.tecnologia-card svg {
+    font-size: 4rem;    
+}
+.tecnologies-container  h2::after{
+    content: "";
+    background: var(--gradient);
+    height: 3px;
+    width: 30%;  
+    margin-top: 20px;
+}
+
+ #sql svg{
+    color: red;    
+}
+#dotnet svg{
+    color: rgb(7, 110, 228);
+}
+#git svg{
+    color: red;
+}
+#csharp svg{
+    color: rgb(154, 28, 238);
+}
+#azure svg{
+    color: rgb(7, 110, 228);
+}
+.tecnologia-card:hover{
+    border: 2px solid #333;
+}
+
+@media (max-width: 600px){
+    .tecnologia-card{
+    width: 35%;
+    font-size: 15px;     
+    }
+    .tecnologia-card svg{        
+        font-size: 2rem;        
+        }
+    .tecnologia-card h3{
+        margin-top: .5rem;
+    }
+}
+@media (max-width: 580px){
+    .tecnologia-card{
+    width: 70%;
+    font-size: 20px;     
+    }
+    .tecnologia-card svg{        
+        font-size: 2rem;        
+        }
+    .tecnologia-card h3{
+        margin-top: .5rem;
+    }
+}

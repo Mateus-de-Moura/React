@@ -1,0 +1,40 @@
+:root{
+    --font-stack: Arial, Helvetica, sans-serif;
+    --text-color: #FFF;
+    --text-color-secundary: #a6a6a6;
+    --body-bg-color: #16131a;
+    --bg-color: #111;
+    --bg-color-secundary: #1d1d1d;
+    --container-border-radius: 10px;
+    --card-border-radius: 5px;
+    --gradient: linear-gradient(90deg, rgb(19, 138, 250) 0%, rgb(25, 216, 241) 100%);
+    
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: var(--font-stack);
+}
+
+body{
+   background-color: var(--body-bg-color);
+}
+
+a, svg{
+    transition: .4s;
+}
+
+#portifolio{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3rem;
+    gap: 3rem;
+}
+#portifolio h1{
+   width: 100%;
+   font-size: 5rem;
+   margin-bottom: 4rem;
+   background: var(--gradient);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
